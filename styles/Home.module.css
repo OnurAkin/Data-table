@@ -1,0 +1,60 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+.table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.table th {
+  padding-top: 12px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.input {
+  background: url(../public/search_icon.png) no-repeat 100%;
+  background-size: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
